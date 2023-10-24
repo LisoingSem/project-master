@@ -1,0 +1,25 @@
+@media (max-width: 767.98px) {
+      *{
+            margin: 0;
+            padding: 0;
+      }
+      header .logo img {
+            height: 120px;
+      }
+      .container{
+            margin: 0;
+      }
+      header .row{
+            margin-left: 5px !important;
+      }
+
+      header input {
+            margin-top: 23px !important;
+            height: 30px;
+            border: none;
+            outline: none;
+            width: 250px !important;
+            font-size: 12px;
+            padding-top: 5px;
+      }
+}
