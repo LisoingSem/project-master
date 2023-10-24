@@ -28,10 +28,9 @@ header input {
 }
 
 header .social {
-      margin-left: -20px;
-      align-items: start;
       display: block;
       margin-top: 7px;
+      margin-right: -73px;
 }
 
 header .social ul {
