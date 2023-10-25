@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moul&display=swap');
 
 :root {
       --header-bg: #0e2c92;
       --header-color: #fff;
       --content-font: 'Hanuman', serif;
-      --navbar-bg: #0a1e63;
+      --navbar-bg: #fad027;
       --navbar-color: #0c247b;
+      --navbar-font: 'Moul', serif;
+      --marquee-blog: #ff0000;
 }
 
 div.container-fluid.header {
@@ -61,21 +64,166 @@ header .social img {
       width: 20px;
 }
 
+#stickyContainer{
+      padding-bottom: 1px;
+}
 
-nav{
+#stickyContainer .container{
+      margin-top: -1px;
+}
+nav {
       height: 50px;
       margin: 0;
 }
-nav li{
+
+nav ul .nav-item {
+      border-top: 1px solid var(--navbar-color);
+      border-bottom: 1px solid var(--navbar-color);
+      border-left: 1px solid var(--navbar-color);
 }
-nav ul li a{
+
+nav ul .nav-item:last-child {
+      border-right: 1px solid var(--navbar-color);
+}
+
+nav ul li a {
       padding: 40px;
+      padding: 13px !important;
+      font-family: var(--navbar-font);
+      color: var(--navbar-color) !important;
+      background-color: var(--navbar-bg) !important;
+      border-radius: 0% !important;
+      cursor: pointer;
 }
 
-nav .active{
-      padding: 13px !important;
+nav .active {
       border: none;
-      border-radius: 0% !important;
+}
+
+nav ul .nav-item:hover .nav-link {
+      background-color: var(--header-color) !important;
+}
+
+nav ul .dropdown-item:hover{
+      background-color: var(--header-color) !important;
+}
 
 
+.nav-link .about:hover .dropdown-master{
+      display: block;
+}
+
+
+nav .dropdown-master{
+      display: none;
+      position: absolute;
+      z-index: 99;
+      width: 227px;
+      margin-left: -1px;
+}
+nav .dropdown-master li{
+      border: none;
+      flex-direction: column;
+      border-top: 1px solid var(--navbar-color);
+      border-right: 1px solid var(--navbar-color);
+      border-left: 1px solid var(--navbar-color);
+}
+
+nav .dropdown-master li:last-child{
+      border-bottom: 1px solid var(--navbar-color);
+}
+
+
+.marquee .row {
+      height: 40px;
+      border: 1px solid darkgoldenrod;
+      margin: 0;
+}
+
+.marquee .hot-news {
+      margin-left: -12px;
+      padding: 7.5px 15px;
+      background-color: var(--marquee-blog) !important;
+      font-family: var(--content-font);
+      color: var(--header-color);
+      font-size: 15px;
+      z-index: 99;
+}
+
+.marquee .hot-news .corner {
+      width: 30px;
+      height: 38px;
+      margin-top: -7.5px;
+      margin-left: 7.2px;
+      background-color: var(--marquee-blog) !important;
+      clip-path: polygon(26% 0, 26% 100%, 100% 50%);
+      position: absolute;
+}
+
+.marquee marquee {
+      display: flex;
+      align-items: center;
+      font-family: var(--content-font);
+      font-size: 13px;
+}
+
+.marquee #time-clock {
+      margin-right: -12px;
+      padding: 7.5px 10px 7.5px 25px;
+      background-color: var(--marquee-blog) !important;
+      font-family: var(--content-font);
+      color: var(--header-color);
+      font-size: 15px;
+      width: 150px;
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+}
+
+.carousel-inner .carousel-item, .carousel-inner img{
+      height: 555px;
+      object-fit: cover;
+}
+
+.adsense , .col-2, .col-3, .col-6{
+      height: 220px !important;
+      box-sizing: border-box;
+}
+
+.adsense .col-6 .row .col-4{
+
+      padding: 0;
+      margin: 0;
+      padding-right: 10px;
+}
+.adsense .col-6 .row .col-4:last-child{
+      padding-right: 0;
+}
+
+
+.adsense img{
+      width: 100%;
+      height: 102%;
+      object-fit: cover;
+}
+
+#backToTopBtn {
+      display: none;
+      position: fixed;
+      bottom: 50px;
+      right: 50px;
+      z-index: 99;
+      font-size: 16px;
+      border: none;
+      outline: none;
+      background-color: var(--navbar-color);
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 50%;
+      padding: 15px 20px;
+}     
+
+body{
+      height: 10000px;
 }
