@@ -12,6 +12,7 @@
       --content-border: #d3d3d3;
       --content-bg: #f8f8f8;
       --categories-color: #000;
+      --date-color: #aaa;
 }
 
 * {
@@ -209,7 +210,7 @@ nav .dropdown-master li:last-child {
 
 .adsense,
 .col-2,
-.col-md-3,
+.col-3,
 .col-6 {
       height: 220px !important;
       box-sizing: border-box;
@@ -239,13 +240,15 @@ div.categories-main {
       margin: 0;
 }
 
-div.categories-header {
+div.categories-header,
+.content-master .header {
       background-color: var(--content-bg);
       border-bottom: 1px solid var(--content-border);
       margin: 0;
 }
 
-div.categories-header h4 {
+div.categories-header h4,
+.content-master .header h4 {
       padding: 15px 0px 15px 20px;
       font-weight: bold;
       font-size: 22px;
@@ -387,25 +390,31 @@ div.row .col-md-3 .content-main .social {
       left: 80px;
       top: 40px;
 }
-.content-main .social .social-body .social-name a, .social-name span{
+
+.content-main .social .social-body .social-name a,
+.social-name span {
       text-decoration: none;
       color: var(--header-color);
 }
-.content-main .social .social-body .social-name a{
-      font-size: 15px; 
+
+.content-main .social .social-body .social-name a {
+      font-size: 15px;
 }
-.content-main .social .social-body .social-name a:not(:has(span)):hover{
+
+.content-main .social .social-body .social-name a:not(:has(span)):hover {
       text-decoration: underline;
 }
-.content-main .social .social-body .social-name a > span:hover{
+
+.content-main .social .social-body .social-name a>span:hover {
       text-decoration: none;
 }
-.content-main .social .social-body .social-name span{
+
+.content-main .social .social-body .social-name span {
       display: flex;
       font-size: 10px;
 }
 
-.content-main .social .social-body .social-contact{
+.content-main .social .social-body .social-contact {
       bottom: 40px;
       display: flex;
       justify-content: space-evenly;
@@ -413,37 +422,164 @@ div.row .col-md-3 .content-main .social {
       position: absolute;
       z-index: 99;
 }
-.content-main .social .social-body .social-contact a{
+
+.content-main .social .social-body .social-contact a {
       text-decoration: none;
       color: var(--navbar-color);
 }
-.content-main .social .social-body .social-contact .contact{
+
+.content-main .social .social-body .social-contact .contact {
       background-color: var(--header-color);
       padding: 5px 10px;
       border-radius: 5px;
       font-size: 13px;
 }
 
-.content-main .download{
+.content-main .download {
       padding: 10px;
       margin-left: 10px;
       width: 94%;
       display: flex;
       border-bottom: 1px solid var(--categories-color);
 }
-.content-main .download a img{
+
+.content-main .download a img {
       width: 120px;
       margin-top: -30px;
       margin-bottom: -30px;
 }
-.content-main .download a img.app-store{
+
+.content-main .download a img.app-store {
       margin-left: 10px;
 }
-.content-main .download a img.android-store{
+
+.content-main .download a img.android-store {
       width: 210px;
       margin-top: -74px;
       margin-left: -20px;
       margin-bottom: -80px;
+}
+
+.content-main .social-links ul {
+      display: flex;
+      margin-top: 20px;
+      margin-left: -10px;
+}
+
+.content-main .social-links ul li {
+      list-style: none;
+      background-color: var(--header-bg);
+      border-radius: 50%;
+      padding: 5px;
+      border: 1px solid var(--navbar-bg);
+      margin-left: 5px;
+}
+
+.content-main .social-links ul li img {
+      width: 25px;
+      margin-bottom: 2px;
+}
+
+div.content-master .content-main .row{
+      border-bottom:1px solid var(--content-border);
+      border-left:1px solid var(--content-border);
+      border-right:1px solid var(--content-border);
+}
+
+div.content-master .content-main .row.header{
+      border-top: 1px solid var(--content-border);
+      padding: 0px 20px;
+      margin: 0;
+}
+div.content-master .content-main img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+}
+
+div.content-master .content-main .content-news {
+      overflow: hidden;
+      height: 200px;
+      padding: 10px;
+}
+
+div.content-master .content-main .content-news .col-3 {
+      overflow: hidden;
+}
+
+div.content-master .content-main .content-news a {
+      text-decoration: none;
+}
+
+div.content-master .content-main .content-news h3.description-header {
+      padding-top: 5px;
+      font-family: var(--content-font);
+      color: var(--navbar-color);
+      font-size: 18px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+      -webkit-box-orient: vertical;
+      margin: 0;
+      cursor: pointer;
+}
+
+div.content-master .content-main .content-news span.description-time {
+      font-family: var(--content-font);
+      color: var(--date-color);
+      font-size: 16px;
+}
+
+div.content-master .content-main .content-news p.description {
+      font-family: var(--content-font);
+      color: var(--categories-color);
+      font-size: 16px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+      margin: 0;
+}
+
+div.content-master .content-main .content-news {
+      opacity: 0;
+      transform: translateY(100px);
+      transition: opacity 0.3s, transform 2s;
+      margin: 0;
+}
+
+div.content-master .content-main .content-news.show {
+      opacity: 1;
+      transform: none;
+}
+
+div.content-master .content-main .content-news div.read-more {
+      font-family: var(--content-font);
+      color: var(--navbar-color);
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+}
+
+div.content-master .content-main .row.button-action{
+      border-bottom:1px solid var(--content-border);
+      border-left:1px solid var(--content-border);
+      border-right:1px solid var(--content-border);
+      padding: 10px;
+      margin: 0;
+}
+      
+
+footer {
+      background-color: var(--header-bg);
+      bottom: 0;
+}
+
+footer h3 {
+      font-size: 15px;
+      color: var(--header-color);
 }
 
 #backToTopBtn {
@@ -461,8 +597,4 @@ div.row .col-md-3 .content-main .social {
       padding: 15px;
       border-radius: 50%;
       padding: 15px 20px;
-}
-
-body {
-      height: 10000px;
 }

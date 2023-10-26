@@ -14,6 +14,7 @@
       <link rel="stylesheet" href="assets/css/bootstrap.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -202,19 +203,16 @@
                                     </div>
                               </div>
                         </div>
-      
                         <div class="row mt-2 ">
                               <div class="img-box">
                                     <a href="#"><img src="assets/images/02.jpg" alt=""></a>
                               </div>
                         </div>
-
                         <div class="row mt-2 ">
                               <div class="img-box">
                                     <a href="#"><img src="assets/images/02.jpg" alt=""></a>
                               </div>
                         </div>
-
                         <div class="row mt-2">
                               <div class="img-box">
                                     <iframe width="100%" height="100%"
@@ -224,7 +222,6 @@
                                           allowfullscreen></iframe>
                               </div>
                         </div>
-
                         <div class="row mt-2 ">
                               <div class="content-main">
                                     <div class="header">
@@ -255,9 +252,18 @@
                                           <div class="social-body">
                                                 <div class="row">
                                                       <div class="col-12">
-                                                            <a href="#"><img src="assets/images/police-icon-removebg-preview.png" alt=""></a>
+                                                            <a href="#"><img
+                                                                        src="assets/images/police-icon-removebg-preview.png"
+                                                                        alt=""></a>
                                                             <div class="social-name">
-                                                                  <a href="#" title="អគ្គស្នងការដ្ឋាននគរបាលជាតិ- General Commissariat of National Police"><marquee onmouseover="this.stop();" onmouseout="this.start();" scrollamount="3">អគ្គស្នងការដ្ឋាននគរបាលជាតិ- General Commissariat of National Police</marquee></a>
+                                                                  <a href="#"
+                                                                        title="អគ្គស្នងការដ្ឋាននគរបាលជាតិ- General Commissariat of National Police">
+                                                                        <marquee onmouseover="this.stop();"
+                                                                              onmouseout="this.start();"
+                                                                              scrollamount="3">
+                                                                              អគ្គស្នងការដ្ឋាននគរបាលជាតិ- General
+                                                                              Commissariat of National Police</marquee>
+                                                                  </a>
                                                                   <a href="#"><span>292,386 អ្នកតាមដាន</span></a>
                                                             </div>
                                                             <div class="social-contact">
@@ -288,28 +294,317 @@
                                           <h4>ផែនទី</h4>
                                     </div>
                                     <div class="social">
-                                          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4079.7975521454755!2d104.91131912398193!3d11.563868319113546!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109513fc957f573%3A0x4145d4f177984a03!2sOrussey%20Market!5e0!3m2!1sen!2skh!4v1698289802683!5m2!1sen!2skh" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                          <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4079.7975521454755!2d104.91131912398193!3d11.563868319113546!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109513fc957f573%3A0x4145d4f177984a03!2sOrussey%20Market!5e0!3m2!1sen!2skh!4v1698289802683!5m2!1sen!2skh"
+                                                width="100%" height="100%" style="border:0;" allowfullscreen=""
+                                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                     </div>
                               </div>
                         </div>
-                       <div class="row mt-2 ">
+                        <div class="row mt-2 ">
                               <div class="content-main">
                                     <div class="header">
                                           <h4>កម្មវិធីសំរាប់ទូរស័ព្ទ</h4>
                                     </div>
                                     <div class="download">
-                                          <a href="#"><img class="app-store" src="assets/images/app-store-logo-app-store.png" alt=""></a>
-                                          <a href="#"><img class="android-store" src="assets/images/android-app-download.png" alt=""></a>
+                                          <a href="#"><img class="app-store"
+                                                      src="assets/images/app-store-logo-app-store.png" alt=""></a>
+                                          <a href="#"><img class="android-store"
+                                                      src="assets/images/android-app-download.png" alt=""></a>
+                                    </div>
+                                    <div class="social-links">
+                                          <ul>
+                                                <li><a href="#"><img src="assets/icons/telegram.png" alt=""></a></li>
+                                                <li><a href="#"><img src="assets/icons/facebook.png" alt=""></a></li>
+                                                <li><a href="#"><img src="assets/icons/youtube.png" alt=""></a></li>
+                                          </ul>
                                     </div>
                               </div>
+                        </div>
+                  </div>
+                  <div class=" col-md-9 col-12 content-master " onload="onPageLoad()">
+                        <div class="row ps-2">
+                              <div class="col-12 content-main">
+                                    <div class="row header">
+                                          <h4>ព័ត៌មានថ្មីបំផុត</h4>
+                                    </div>
+                                    <div class="row  content-news ">
+                                          <div class="col-3">
+                                                <a href="#"><img src="assets/images/02.jpg" alt=""></a>
+                                          </div>
+                                          <div class="col-9">
+                                                <a href="#">
+                                                      <h3 class="description-header">
+                                                            កម្លាំងប៉ុស្ដិ៍នគរបាលរដ្ឋបាលមិត្តភាព​
+                                                            ចុះផ្សព្វផ្សាយពីផលប៉ះពាល់នៃការប្រើប្រាស់សារធាតុញៀន
+                                                            ក្មេងទំនើង ច្បាប់ចរាចរណ៍ផ្លូវគោក និងគោលនយោបាយភូមិ-សង្កាត់
+                                                            មានសុវត្ថិភាព ដល់បងប្អូនប្រជាពលរដ្ឋ
+                                                      </h3>
+                                                </a>
+                                                <span class="description-time">
+                                                      <i class="fa-regular fa-clock"></i> ព្រហស្បតិ៍, ២៦ តុលា ២០២៣ ១៣:៥៩
+                                                      <i class="fa-regular fa-eye"></i> 4
+                                                </span>
+
+                                                <p class="description">
+                                                      រាជធានីភ្នំពេញ ៖ ដោយអនុវត្តតាមការណែនាំពីឯកឧត្តម ឧត្តមសេនីយ៍ទោ ជួន
+                                                      ណារិន្ទ អគ្គស្នងការរង និងជាស្នងការនគរបាលរាជធានីភ្នំពេញ
+                                                      នៅព្រឹកថ្ងៃទី២៦ ខែតុលា ឆ្នាំ២០២៣ លោកវរសេនីយ៍ឯក នេត ស៊ីថុន
+                                                      អធិការនគរបាលខណ្ឌ៧មករា
+                                                      បានចាត់ឲ្យលោកនាយប៉ុស្ដិ៍នគរបាលរដ្ឋបាលមិត្តភាព
+                                                      សហការជាមួយកម្លាំងជំនាញផ្នែកប្រឆាំងគ្រឿងញៀន​ ដឹកនាំមន្ត្រីក្រោមឱវាទ
+                                                      ចុះផ្សព្វផ្សាយពីផលប៉ះពាល់នៃការប្រើប្រាស់សារធាតុញៀន ក្មេងទំនើង
+                                                      ច្បាប់ចរាចរណ៍ផ្លូវគោក និងគោលនយោបាយភូមិ-សង្កាត់ មានសុវត្ថិភាព
+                                                      ដល់បងប្អូនប្រជាពលរដ្ឋ នៅចំណុចហាងមួយកន្លែង
+                                                      ស្ថិតក្នុងសង្កាត់មិត្តភាព​ ខណ្ឌ៧មករា ៕
+                                                </p>
+
+                                                <a href="#">
+                                                      <div class="read-more">ចុចទីនេះដើម្បីអានបន្ត <i
+                                                                  class="fa-regular fa-circle-right"></i></div>
+                                                </a>
+                                          </div>
+                                    </div>
+                                    <div class="row content-news " >
+                                          <div class="col-3">
+                                                <a href="#"><img src="assets/images/02.jpg" alt=""></a>
+                                          </div>
+                                          <div class="col-9">
+                                                <a href="#">
+                                                      <h3 class="description-header">
+                                                            កម្លាំងប៉ុស្ដិ៍នគរបាលរដ្ឋបាលមិត្តភាព​
+                                                            ចុះផ្សព្វផ្សាយពីផលប៉ះពាល់នៃការប្រើប្រាស់សារធាតុញៀន
+                                                            ក្មេងទំនើង ច្បាប់ចរាចរណ៍ផ្លូវគោក និងគោលនយោបាយភូមិ-សង្កាត់
+                                                            មានសុវត្ថិភាព ដល់បងប្អូនប្រជាពលរដ្ឋ
+                                                      </h3>
+                                                </a>
+                                                <span class="description-time">
+                                                      <i class="fa-regular fa-clock"></i> ព្រហស្បតិ៍, ២៦ តុលា ២០២៣ ១៣:៥៩ <i class="fa-regular fa-eye"></i> 4
+                                                </span>
+
+                                                <p class="description">
+                                                      រាជធានីភ្នំពេញ ៖ ដោយអនុវត្តតាមការណែនាំពីឯកឧត្តម ឧត្តមសេនីយ៍ទោ ជួន
+                                                      ណារិន្ទ អគ្គស្នងការរង និងជាស្នងការនគរបាលរាជធានីភ្នំពេញ
+                                                      នៅព្រឹកថ្ងៃទី២៦ ខែតុលា ឆ្នាំ២០២៣ លោកវរសេនីយ៍ឯក នេត ស៊ីថុន
+                                                      អធិការនគរបាលខណ្ឌ៧មករា
+                                                      បានចាត់ឲ្យលោកនាយប៉ុស្ដិ៍នគរបាលរដ្ឋបាលមិត្តភាព
+                                                      សហការជាមួយកម្លាំងជំនាញផ្នែកប្រឆាំងគ្រឿងញៀន​ ដឹកនាំមន្ត្រីក្រោមឱវាទ
+                                                      ចុះផ្សព្វផ្សាយពីផលប៉ះពាល់នៃការប្រើប្រាស់សារធាតុញៀន ក្មេងទំនើង
+                                                      ច្បាប់ចរាចរណ៍ផ្លូវគោក និងគោលនយោបាយភូមិ-សង្កាត់ មានសុវត្ថិភាព
+                                                      ដល់បងប្អូនប្រជាពលរដ្ឋ នៅចំណុចហាងមួយកន្លែង
+                                                      ស្ថិតក្នុងសង្កាត់មិត្តភាព​ ខណ្ឌ៧មករា ៕
+                                                </p>
+
+                                                <a href="#">
+                                                      <div class="read-more">ចុចទីនេះដើម្បីអានបន្ត <i
+                                                                  class="fa-regular fa-circle-right"></i></div>
+                                                </a>
+                                          </div>
+                                    </div>
+                                    <div class="row content-news ">
+                                          <div class="col-3">
+                                                <a href="#"><img src="assets/images/02.jpg" alt=""></a>
+                                          </div>
+                                          <div class="col-9">
+                                                <a href="#">
+                                                      <h3 class="description-header">
+                                                            កម្លាំងប៉ុស្ដិ៍នគរបាលរដ្ឋបាលមិត្តភាព​
+                                                            ចុះផ្សព្វផ្សាយពីផលប៉ះពាល់នៃការប្រើប្រាស់សារធាតុញៀន
+                                                            ក្មេងទំនើង ច្បាប់ចរាចរណ៍ផ្លូវគោក និងគោលនយោបាយភូមិ-សង្កាត់
+                                                            មានសុវត្ថិភាព ដល់បងប្អូនប្រជាពលរដ្ឋ
+                                                      </h3>
+                                                </a>
+                                                <span class="description-time">
+                                                      <i class="fa-regular fa-clock"></i> ព្រហស្បតិ៍, ២៦ តុលា ២០២៣ ១៣:៥៩ <i class="fa-regular fa-eye"></i> 4
+                                                </span>
+
+                                                <p class="description">
+                                                      រាជធានីភ្នំពេញ ៖ ដោយអនុវត្តតាមការណែនាំពីឯកឧត្តម ឧត្តមសេនីយ៍ទោ ជួន
+                                                      ណារិន្ទ អគ្គស្នងការរង និងជាស្នងការនគរបាលរាជធានីភ្នំពេញ
+                                                      នៅព្រឹកថ្ងៃទី២៦ ខែតុលា ឆ្នាំ២០២៣ លោកវរសេនីយ៍ឯក នេត ស៊ីថុន
+                                                      អធិការនគរបាលខណ្ឌ៧មករា
+                                                      បានចាត់ឲ្យលោកនាយប៉ុស្ដិ៍នគរបាលរដ្ឋបាលមិត្តភាព
+                                                      សហការជាមួយកម្លាំងជំនាញផ្នែកប្រឆាំងគ្រឿងញៀន​ ដឹកនាំមន្ត្រីក្រោមឱវាទ
+                                                      ចុះផ្សព្វផ្សាយពីផលប៉ះពាល់នៃការប្រើប្រាស់សារធាតុញៀន ក្មេងទំនើង
+                                                      ច្បាប់ចរាចរណ៍ផ្លូវគោក និងគោលនយោបាយភូមិ-សង្កាត់ មានសុវត្ថិភាព
+                                                      ដល់បងប្អូនប្រជាពលរដ្ឋ នៅចំណុចហាងមួយកន្លែង
+                                                      ស្ថិតក្នុងសង្កាត់មិត្តភាព​ ខណ្ឌ៧មករា ៕
+                                                </p>
+
+                                                <a href="#">
+                                                      <div class="read-more">ចុចទីនេះដើម្បីអានបន្ត <i
+                                                                  class="fa-regular fa-circle-right"></i></div>
+                                                </a>
+                                          </div>
+                                    </div>
+                                    <div class="row content-news ">
+                                          <div class="col-3">
+                                                <a href="#"><img src="assets/images/02.jpg" alt=""></a>
+                                          </div>
+                                          <div class="col-9">
+                                                <a href="#">
+                                                      <h3 class="description-header">
+                                                            កម្លាំងប៉ុស្ដិ៍នគរបាលរដ្ឋបាលមិត្តភាព​
+                                                            ចុះផ្សព្វផ្សាយពីផលប៉ះពាល់នៃការប្រើប្រាស់សារធាតុញៀន
+                                                            ក្មេងទំនើង ច្បាប់ចរាចរណ៍ផ្លូវគោក និងគោលនយោបាយភូមិ-សង្កាត់
+                                                            មានសុវត្ថិភាព ដល់បងប្អូនប្រជាពលរដ្ឋ
+                                                      </h3>
+                                                </a>
+                                                <span class="description-time">
+                                                      <i class="fa-regular fa-clock"></i> ព្រហស្បតិ៍, ២៦ តុលា ២០២៣ ១៣:៥៩ <i class="fa-regular fa-eye"></i> 4
+                                                </span>
+
+                                                <p class="description">
+                                                      រាជធានីភ្នំពេញ ៖ ដោយអនុវត្តតាមការណែនាំពីឯកឧត្តម ឧត្តមសេនីយ៍ទោ ជួន
+                                                      ណារិន្ទ អគ្គស្នងការរង និងជាស្នងការនគរបាលរាជធានីភ្នំពេញ
+                                                      នៅព្រឹកថ្ងៃទី២៦ ខែតុលា ឆ្នាំ២០២៣ លោកវរសេនីយ៍ឯក នេត ស៊ីថុន
+                                                      អធិការនគរបាលខណ្ឌ៧មករា
+                                                      បានចាត់ឲ្យលោកនាយប៉ុស្ដិ៍នគរបាលរដ្ឋបាលមិត្តភាព
+                                                      សហការជាមួយកម្លាំងជំនាញផ្នែកប្រឆាំងគ្រឿងញៀន​ ដឹកនាំមន្ត្រីក្រោមឱវាទ
+                                                      ចុះផ្សព្វផ្សាយពីផលប៉ះពាល់នៃការប្រើប្រាស់សារធាតុញៀន ក្មេងទំនើង
+                                                      ច្បាប់ចរាចរណ៍ផ្លូវគោក និងគោលនយោបាយភូមិ-សង្កាត់ មានសុវត្ថិភាព
+                                                      ដល់បងប្អូនប្រជាពលរដ្ឋ នៅចំណុចហាងមួយកន្លែង
+                                                      ស្ថិតក្នុងសង្កាត់មិត្តភាព​ ខណ្ឌ៧មករា ៕
+                                                </p>
+
+                                                <a href="#">
+                                                      <div class="read-more">ចុចទីនេះដើម្បីអានបន្ត <i
+                                                                  class="fa-regular fa-circle-right"></i></div>
+                                                </a>
+                                          </div>
+                                    </div>
+                                    <div class="row content-news ">
+                                          <div class="col-3">
+                                                <a href="#"><img src="assets/images/02.jpg" alt=""></a>
+                                          </div>
+                                          <div class="col-9">
+                                                <a href="#">
+                                                      <h3 class="description-header">
+                                                            កម្លាំងប៉ុស្ដិ៍នគរបាលរដ្ឋបាលមិត្តភាព​
+                                                            ចុះផ្សព្វផ្សាយពីផលប៉ះពាល់នៃការប្រើប្រាស់សារធាតុញៀន
+                                                            ក្មេងទំនើង ច្បាប់ចរាចរណ៍ផ្លូវគោក និងគោលនយោបាយភូមិ-សង្កាត់
+                                                            មានសុវត្ថិភាព ដល់បងប្អូនប្រជាពលរដ្ឋ
+                                                      </h3>
+                                                </a>
+                                                <span class="description-time">
+                                                      <i class="fa-regular fa-clock"></i> ព្រហស្បតិ៍, ២៦ តុលា ២០២៣ ១៣:៥៩ <i class="fa-regular fa-eye"></i> 4
+                                                </span>
+
+                                                <p class="description">
+                                                      រាជធានីភ្នំពេញ ៖ ដោយអនុវត្តតាមការណែនាំពីឯកឧត្តម ឧត្តមសេនីយ៍ទោ ជួន
+                                                      ណារិន្ទ អគ្គស្នងការរង និងជាស្នងការនគរបាលរាជធានីភ្នំពេញ
+                                                      នៅព្រឹកថ្ងៃទី២៦ ខែតុលា ឆ្នាំ២០២៣ លោកវរសេនីយ៍ឯក នេត ស៊ីថុន
+                                                      អធិការនគរបាលខណ្ឌ៧មករា
+                                                      បានចាត់ឲ្យលោកនាយប៉ុស្ដិ៍នគរបាលរដ្ឋបាលមិត្តភាព
+                                                      សហការជាមួយកម្លាំងជំនាញផ្នែកប្រឆាំងគ្រឿងញៀន​ ដឹកនាំមន្ត្រីក្រោមឱវាទ
+                                                      ចុះផ្សព្វផ្សាយពីផលប៉ះពាល់នៃការប្រើប្រាស់សារធាតុញៀន ក្មេងទំនើង
+                                                      ច្បាប់ចរាចរណ៍ផ្លូវគោក និងគោលនយោបាយភូមិ-សង្កាត់ មានសុវត្ថិភាព
+                                                      ដល់បងប្អូនប្រជាពលរដ្ឋ នៅចំណុចហាងមួយកន្លែង
+                                                      ស្ថិតក្នុងសង្កាត់មិត្តភាព​ ខណ្ឌ៧មករា ៕
+                                                </p>
+
+                                                <a href="#">
+                                                      <div class="read-more">ចុចទីនេះដើម្បីអានបន្ត <i
+                                                                  class="fa-regular fa-circle-right"></i></div>
+                                                </a>
+                                          </div>
+                                    </div>
+                                    <div class="row content-news ">
+                                          <div class="col-3">
+                                                <a href="#"><img src="assets/images/02.jpg" alt=""></a>
+                                          </div>
+                                          <div class="col-9">
+                                                <a href="#">
+                                                      <h3 class="description-header">
+                                                            កម្លាំងប៉ុស្ដិ៍នគរបាលរដ្ឋបាលមិត្តភាព​
+                                                            ចុះផ្សព្វផ្សាយពីផលប៉ះពាល់នៃការប្រើប្រាស់សារធាតុញៀន
+                                                            ក្មេងទំនើង ច្បាប់ចរាចរណ៍ផ្លូវគោក និងគោលនយោបាយភូមិ-សង្កាត់
+                                                            មានសុវត្ថិភាព ដល់បងប្អូនប្រជាពលរដ្ឋ
+                                                      </h3>
+                                                </a>
+                                                <span class="description-time">
+                                                      <i class="fa-regular fa-clock"></i> ព្រហស្បតិ៍, ២៦ តុលា ២០២៣ ១៣:៥៩ <i class="fa-regular fa-eye"></i> 4
+                                                </span>
+
+                                                <p class="description">
+                                                      រាជធានីភ្នំពេញ ៖ ដោយអនុវត្តតាមការណែនាំពីឯកឧត្តម ឧត្តមសេនីយ៍ទោ ជួន
+                                                      ណារិន្ទ អគ្គស្នងការរង និងជាស្នងការនគរបាលរាជធានីភ្នំពេញ
+                                                      នៅព្រឹកថ្ងៃទី២៦ ខែតុលា ឆ្នាំ២០២៣ លោកវរសេនីយ៍ឯក នេត ស៊ីថុន
+                                                      អធិការនគរបាលខណ្ឌ៧មករា
+                                                      បានចាត់ឲ្យលោកនាយប៉ុស្ដិ៍នគរបាលរដ្ឋបាលមិត្តភាព
+                                                      សហការជាមួយកម្លាំងជំនាញផ្នែកប្រឆាំងគ្រឿងញៀន​ ដឹកនាំមន្ត្រីក្រោមឱវាទ
+                                                      ចុះផ្សព្វផ្សាយពីផលប៉ះពាល់នៃការប្រើប្រាស់សារធាតុញៀន ក្មេងទំនើង
+                                                      ច្បាប់ចរាចរណ៍ផ្លូវគោក និងគោលនយោបាយភូមិ-សង្កាត់ មានសុវត្ថិភាព
+                                                      ដល់បងប្អូនប្រជាពលរដ្ឋ នៅចំណុចហាងមួយកន្លែង
+                                                      ស្ថិតក្នុងសង្កាត់មិត្តភាព​ ខណ្ឌ៧មករា ៕
+                                                </p>
+
+                                                <a href="#">
+                                                      <div class="read-more">ចុចទីនេះដើម្បីអានបន្ត <i
+                                                                  class="fa-regular fa-circle-right"></i></div>
+                                                </a>
+                                          </div>
+                                    </div>
+                                    <div class="row content-news ">
+                                          <div class="col-3">
+                                                <a href="#"><img src="assets/images/02.jpg" alt=""></a>
+                                          </div>
+                                          <div class="col-9">
+                                                <a href="#">
+                                                      <h3 class="description-header">
+                                                            កម្លាំងប៉ុស្ដិ៍នគរបាលរដ្ឋបាលមិត្តភាព​
+                                                            ចុះផ្សព្វផ្សាយពីផលប៉ះពាល់នៃការប្រើប្រាស់សារធាតុញៀន
+                                                            ក្មេងទំនើង ច្បាប់ចរាចរណ៍ផ្លូវគោក និងគោលនយោបាយភូមិ-សង្កាត់
+                                                            មានសុវត្ថិភាព ដល់បងប្អូនប្រជាពលរដ្ឋ
+                                                      </h3>
+                                                </a>
+                                                <span class="description-time">
+                                                      <i class="fa-regular fa-clock"></i> ព្រហស្បតិ៍, ២៦ តុលា ២០២៣ ១៣:៥៩ <i class="fa-regular fa-eye"></i> 4
+                                                </span>
+
+                                                <p class="description">
+                                                      រាជធានីភ្នំពេញ ៖ ដោយអនុវត្តតាមការណែនាំពីឯកឧត្តម ឧត្តមសេនីយ៍ទោ ជួន
+                                                      ណារិន្ទ អគ្គស្នងការរង និងជាស្នងការនគរបាលរាជធានីភ្នំពេញ
+                                                      នៅព្រឹកថ្ងៃទី២៦ ខែតុលា ឆ្នាំ២០២៣ លោកវរសេនីយ៍ឯក នេត ស៊ីថុន
+                                                      អធិការនគរបាលខណ្ឌ៧មករា
+                                                      បានចាត់ឲ្យលោកនាយប៉ុស្ដិ៍នគរបាលរដ្ឋបាលមិត្តភាព
+                                                      សហការជាមួយកម្លាំងជំនាញផ្នែកប្រឆាំងគ្រឿងញៀន​ ដឹកនាំមន្ត្រីក្រោមឱវាទ
+                                                      ចុះផ្សព្វផ្សាយពីផលប៉ះពាល់នៃការប្រើប្រាស់សារធាតុញៀន ក្មេងទំនើង
+                                                      ច្បាប់ចរាចរណ៍ផ្លូវគោក និងគោលនយោបាយភូមិ-សង្កាត់ មានសុវត្ថិភាព
+                                                      ដល់បងប្អូនប្រជាពលរដ្ឋ នៅចំណុចហាងមួយកន្លែង
+                                                      ស្ថិតក្នុងសង្កាត់មិត្តភាព​ ខណ្ឌ៧មករា ៕
+                                                </p>
+
+                                                <a href="#">
+                                                      <div class="read-more">ចុចទីនេះដើម្បីអានបន្ត <i
+                                                                  class="fa-regular fa-circle-right"></i></div>
+                                                </a>
+                                          </div>
+                                    </div>
+                                    <div class="row button-action">
+                                          <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                                <button id="showPreviousPage">ត្រឡប់ក្រោយ</button>
+                                                <button id="showNextPage">បន្ទាប់</button>
+                                          </div>
+                                    </div>
+                              </div>
+
                         </div>
 
 
                   </div>
-                  <div class="col-9">2</div>
             </div>
-
       </section>
+
+      <footer class=" text-center text-lg-start mt-3 ">
+            <div class="text-center p-3">
+                  <h3>Copy Right © 2023 រក្សាសិទ្ធិគ្រប់យ៉ាង</h3>
+                  <h3><a href="#" class="nav-link text-white ">អគ្គស្នងការដ្ឋាននគរបាលជាតិ- General Commissariat of
+                              National Police</a></h3>
+            </div>
+      </footer>
+
+
 
 
       <button id="backToTopBtn"><i class="fa-solid fa-angles-up"></i></button>
