@@ -209,7 +209,7 @@ nav .dropdown-master li:last-child {
 
 .adsense,
 .col-2,
-.col-3,
+.col-md-3,
 .col-6 {
       height: 220px !important;
       box-sizing: border-box;
@@ -274,7 +274,7 @@ div.categories-list span:hover {
       color: var(--marquee-blog);
 }
 
-div.row .col-3 .img-box {
+div.row .col-md-3 .img-box {
       background-color: var(--header-color);
       width: 100%;
       padding: 10px;
@@ -282,16 +282,16 @@ div.row .col-3 .img-box {
       cursor: pointer;
 }
 
-div.row .col-3 .img-box img {
+div.row .col-md-3 .img-box img {
       width: 100%;
 }
 
-div.row .col-3 .content-main {
+div.row .col-md-3 .content-main {
       border: 1px solid var(--content-border);
       padding: 0;
 }
 
-div.row .col-3 .content-main .header h4 {
+div.row .col-md-3 .content-main .header h4 {
       padding: 10px 10px;
       padding: 15px 0px 15px 20px;
       font-weight: bold;
@@ -302,14 +302,14 @@ div.row .col-3 .content-main .header h4 {
       margin: 0;
 }
 
-div.row .col-3 .content-main .header {
+div.row .col-md-3 .content-main .header {
       padding: 0;
       margin: 0;
       background-color: var(--content-bg);
       border-bottom: 1px solid var(--header-bg);
 }
 
-div.row .col-3 .content-main .address-body,
+div.row .col-md-3 .content-main .address-body,
 .address-footer {
       margin: 20px 10px;
       font-family: var(--content-font);
@@ -317,28 +317,28 @@ div.row .col-3 .content-main .address-body,
       border-bottom: 1px solid var(--categories-color);
 }
 
-div.row .col-3 .content-main .address-footer {
+div.row .col-md-3 .content-main .address-footer {
       border: none;
       margin: 0px 0px 20px 10px;
 
 }
 
-div.row .col-3 .content-main .address-footer .box {
+div.row .col-md-3 .content-main .address-footer .box {
       display: flex;
       align-items: center;
 }
 
-div.row .col-3 .content-main .address-footer .box b {
+div.row .col-md-3 .content-main .address-footer .box b {
       font-size: 13px;
       width: 30%;
       margin-bottom: 2px;
 }
 
-div.row .col-3 .content-main .address-footer .box span {
+div.row .col-md-3 .content-main .address-footer .box span {
       font-size: 13px;
 }
 
-div.row .col-3 .content-main .social {
+div.row .col-md-3 .content-main .social {
       padding: 10px;
       position: relative;
       overflow: hidden;
