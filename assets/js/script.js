@@ -76,12 +76,3 @@ document.getElementById('backToTopBtn').addEventListener('click', function () {
 });
 
 
-// window.addEventListener('scroll', function() {
-//   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-//   if (scrollTop >= stickyContainer.offsetTop) {
-//     stickyContainer.style.backgroundColor = "#fad027";
-//   } else {
-//     stickyContainer.style.backgroundColor = originalBackgroundColor;
-//   }
-// });
