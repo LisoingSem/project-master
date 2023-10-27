@@ -125,3 +125,22 @@ $(document).ready(function () {
       $(window).scroll(checkVisibility);
       checkVisibility();
 });
+
+
+var menu = document.querySelector('#pop-menu');
+var list = document.querySelector('.menu');
+var open = document.querySelector('.toggle');
+var close = document.querySelector('.close-button');
+open.addEventListener('click', function () {
+      menu.style.left = '0'
+      list.style.right = '0'
+})
+close.addEventListener('click', function () {
+      menu.style.left = '-100%'
+      list.style.right = '100%'
+})
+menu.addEventListener('click', function () {
+      menu.style.left = '-100%'
+      list.style.right = '100%'
+})
+

@@ -221,15 +221,21 @@
 
 @media (max-width: 575.98px) {
 
-      *{
+      * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
       }
 
+      .container-fluid {
+            padding: 0 !important;
+      }
+
       header {
             padding: 0 !important;
             right: 0;
+            display: flex;
+            flex-flow: row wrap;
       }
 
       .hot-news,
@@ -245,8 +251,12 @@
             padding: 0 !important;
       }
 
+      header .logo {
+            padding: 0px 10px;
+      }
+
       header .logo img {
-            height: 90px;
+            height: 100px;
       }
 
       .carousel-inner .carousel-item,
@@ -272,5 +282,58 @@
             font-family: var(--content-font);
             color: var(--header-bg);
       }
+
+      .master-change {
+            display: flex;
+            flex-flow: row wrap;
+      }
+
+      .content-master {
+            order: 1;
+            flex: 1;
+      }
+
+      .list-master {
+            order: 2;
+      }
+
+      .search-box {
+            width: 100%;
+            position: relative;
+            margin: 0 !important;
+            padding: 0 !important;
+            align-self: center;
+            justify-content: start !important;
+            background-color: #fad027;
+            left: 0;
+      }
+
+      header .row {
+            margin: 0 !important;
+      }
+
+      header .social {
+            padding: 0;
+      }
+
+      header .social ul {
+            display: flex;
+            padding: 10px 0px 5px 30px;
+      }
+
+      header .social ul li {
+            margin-left: 10px;
+      }
+
+      header .social ul li a {
+            margin-bottom: 6px;
+            font-size: 25px;
+      }
+
+      #backToTopBtn {
+            bottom: 30px;
+            right: 20px;
+      }
+      
 
 }

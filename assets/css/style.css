@@ -46,6 +46,13 @@ header input {
       padding-top: 2px;
 }
 
+header .search-box{
+      display: flex;
+      align-self: center;
+      justify-content: end;
+      margin: 0;
+}
+
 header .social {
       display: block;
       margin-top: 7px;
@@ -609,7 +616,7 @@ footer h3 {
       position: fixed;
       bottom: 50px;
       right: 50px;
-      z-index: 99;
+      z-index: 98;
       font-size: 16px;
       border: none;
       outline: none;
@@ -619,4 +626,89 @@ footer h3 {
       padding: 15px;
       border-radius: 50%;
       padding: 15px 20px;
+}
+
+
+#pop-menu {
+      width: 100%;
+      position: absolute;
+      z-index: 98;
+      top: 0;
+      left: -100%;
+      transition: .5s ease-in;
+      background-color: #0000006f;
+}
+
+#pop-menu .menu {
+      right: 100%;
+      transition: .5s all ease-in;
+      width: 80%;
+      position: relative;
+      background-color: #fff;
+}
+
+#pop-menu .menu .menu-header {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #0e2c92;
+}
+
+#pop-menu .menu .menu-header img {
+      width: 80%;
+}
+
+#pop-menu .menu .menu-header .close-button {
+      margin-top: 5px;
+      margin-right: 15px;
+}
+
+#pop-menu .menu .menu-header .close-button i {
+      font-size: 25px;
+      color: #fff;
+}
+
+#pop-menu .menu .menu-body ul{
+      display: block;
+      margin-left: -10px;
+      padding: 10px 10px 10px 20px;
+}
+
+#pop-menu .menu .menu-body ul li{
+      list-style: none;
+      padding: 7px 0;
+      margin-bottom: 2px;
+      border-radius: 3px;
+}
+
+#pop-menu .menu .menu-body ul li.active{
+      background-color: var(--content-border);
+}
+
+#pop-menu .menu .menu-body ul li:hover{
+      background-color: var(--content-border);
+}
+
+#pop-menu .menu .menu-body ul li a{
+      text-decoration: none;
+      font-family: var(--content-font);
+      color: var(--categories-color);
+      padding: 10px;
+}
+
+#pop-menu .menu .menu-body ul li a i{
+      width: 30px;
+}
+
+.toggle {
+      position: absolute;
+      z-index: 99;
+      left: 85% !important;
+      top: 28%;
+}
+
+.toggle i {
+      font-size: 30px;
+      color: #fff;
 }
