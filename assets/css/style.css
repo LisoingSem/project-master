@@ -499,6 +499,7 @@ div.content-master .content-main .content-news {
       overflow: hidden;
       height: 200px;
       padding: 10px;
+      margin: 0;
 }
 
 div.content-master .content-main .content-news .col-3 {
@@ -541,12 +542,6 @@ div.content-master .content-main .content-news p.description {
       margin: 0;
 }
 
-div.content-master .content-main .content-news {
-      opacity: 0;
-      transform: translateY(100px);
-      transition: opacity 0.3s, transform .5s;
-      margin: 0;
-}
 
 div.content-master .content-main .content-news.show {
       opacity: 1;
@@ -585,6 +580,18 @@ div.content-master .content-main .content-news.card-master {
 
 div.content-master .content-main .content-news.card-master iframe{
       height: 160px;
+}
+
+div.content-master .content-main .content-news.card-master img{
+      height: 244px !important;
+      border-radius: 3px;
+}
+
+div.content-master .content-main .content-news.card-master h5{
+      font-size: 14px;
+      font-family: var(--content-font);
+      color: var(--categories-color);
+      margin: 5px 0px 0px 0px;
 }
       
 

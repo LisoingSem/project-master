@@ -19,11 +19,11 @@
 
 <body>
       <!-- <canvas id="canvas"></canvas> -->
-      <div class="container-fluid header">
-            <header class="container d-flex justify-content-between">
+      <div class="container-fluid header p-md-0 ">
+            <header class="container d-flex justify-content-between p-md-0 ">
                   <a href="#" class="logo"><img src="assets/images/logo_police.png" alt=""></a>
 
-                  <div class="row d-flex align-self-center mt-3 justify-content-end ">
+                  <div class="row d-flex align-self-center mt-3 justify-content-end d-sm-none d-none  d-md-block ">
                         <input type="text" placeholder="ស្វែងរក...">
                         <div class="social">
                               <ul>
@@ -36,8 +36,8 @@
             </header>
       </div>
 
-      <div class="container-fluid sticky-top" id="stickyContainer">
-            <nav class="container p-0">
+      <div class="container-fluid sticky-top d-sm-none d-none d-md-block m-md-0 p-md-0" id="stickyContainer">
+            <nav class="container p-0" id="changesize">
                   <ul class="nav nav-pills nav-fill">
                         <li class="nav-item">
                               <a class="nav-link" aria-current="page" href="">ទំព័រដើម</a>
@@ -98,7 +98,7 @@
             </div>
       </section>
 
-      <section class="container mt-2 p-0">
+      <section class="container mt-2 p-0 slider">
             <div class="row m-0 p-0 ">
                   <div class="col-12 p-0 ">
                         <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -128,12 +128,12 @@
             </div>
       </section>
 
-      <section class="container mt-2 p-0 ">
+      <section class="container mt-2 p-0 adsense-blog">
             <div class="row m-0 p-0 ">
-                  <div class="col-12 p-0">
+                  <div class="col-12 p-0 p-md-1">
                         <div class="row adsense ">
-                              <div class="col-2"><a href="#"><img src="assets/images/sortheth.png" alt=""></a></div>
-                              <div class="col-6 p-0 ">
+                              <div class="col-2 col-md-3"><a href="#"><img src="assets/images/sortheth.png" alt=""></a></div>
+                              <div class="col-6 p-0 col-md-6">
                                     <div class="row mb-3">
                                           <div class="col-12"><a href="#"><img src="assets/images/banner.jpeg"
                                                             alt=""></a></div>
@@ -147,7 +147,7 @@
                                                             alt=""></a></div>
                                     </div>
                               </div>
-                              <div class="col-4" class="w-100"><iframe width="100%" height="100%"
+                              <div class="col-4 col-md-3" class="w-100"><iframe width="100%" height="100%"
                                           src="https://www.youtube.com/embed/Czzp1Vyx__U?si=hp1w9QJ7ATuxGjwB"
                                           title="YouTube video player" frameborder="0"
                                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -157,8 +157,8 @@
             </div>
       </section>
 
-      <section class="container mt-3  p-0 ">
-            <div class="row m-0">
+      <section class="container mt-3  p-0 content-body">
+            <div class="row m-0 ps-md-1 ">
                   <div class="col-12 col-md-3 m-0 ">
                         <div class="row">
                               <div class="categories-main">
@@ -270,13 +270,13 @@
                                                                   <a href="#">
                                                                         <div class="contact">
                                                                               <i class="fa-brands fa-facebook"></i>
-                                                                              តាមដានទំព័រ
+                                                                              <span class="d-md-none">តាមដានទំព័រ</span>
                                                                         </div>
                                                                   </a>
                                                                   <a href="#">
                                                                         <div class="contact">
                                                                               <i class="fa-solid fa-message"></i>
-                                                                              សូមទាក់ទងមកយើងខ្ញុំ
+                                                                              <span class="d-md-none">សូមទាក់ទងមកយើងខ្ញុំ</span>
                                                                         </div>
                                                                   </a>
                                                             </div>
@@ -324,11 +324,11 @@
                   </div>
                   <div class=" col-md-9 col-12 content-master ">
                         <div class="row ps-2">
-                              <div class="col-12 content-main">
+                              <div class="col-12 content-main pe-0 ">
                                     <div class="row header">
                                           <h4>ព័ត៌មានថ្មីបំផុត</h4>
                                     </div>
-                                    <div class="row  content-news ">
+                                    <div class="row  content-news">
                                           <div class="col-4">
                                                 <a href="#"><img src="assets/images/02.jpg" alt=""></a>
                                           </div>
@@ -846,7 +846,7 @@
                                                 </a>
                                           </div>
                                     </div>
-                                    
+
                                     <div class="row button-action content-news">
                                           <div class="d-grid gap-2 d-md-flex justify-content-md-center">
                                                 <button id="showPreviousPage"><i class="fa-solid fa-backward"></i>
@@ -863,31 +863,137 @@
                                     <div class="row header">
                                           <h4>វីដេអូ</h4>
                                     </div>
-                                    <div class="row row-cols-1 row-cols-md-4 g-3 content-news card-master">
+                                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-4 g-3 content-news card-master">
                                           <div class="col">
                                                 <div class="card h-100">
-                                                      <iframe  width="100%" class="card-img-top" height="100%" src="https://www.youtube.com/embed/VkvpMktctXQ?si=ps3YfZ9mNkNDrkaF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                      <iframe width="100%" class="card-img-top" height="100%"
+                                                            src="https://www.youtube.com/embed/VkvpMktctXQ?si=ps3YfZ9mNkNDrkaF"
+                                                            title="YouTube video player" frameborder="0"
+                                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                            allowfullscreen></iframe>
                                                 </div>
                                           </div>
                                           <div class="col">
                                                 <div class="card h-100">
-                                                      <iframe  width="100%" class="card-img-top" height="100%" src="https://www.youtube.com/embed/VkvpMktctXQ?si=ps3YfZ9mNkNDrkaF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                      <iframe width="100%" class="card-img-top" height="100%"
+                                                            src="https://www.youtube.com/embed/VkvpMktctXQ?si=ps3YfZ9mNkNDrkaF"
+                                                            title="YouTube video player" frameborder="0"
+                                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                            allowfullscreen></iframe>
                                                 </div>
                                           </div>
                                           <div class="col">
                                                 <div class="card h-100">
-                                                      <iframe  width="100%" class="card-img-top" height="100%" src="https://www.youtube.com/embed/VkvpMktctXQ?si=ps3YfZ9mNkNDrkaF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                      <iframe width="100%" class="card-img-top" height="100%"
+                                                            src="https://www.youtube.com/embed/VkvpMktctXQ?si=ps3YfZ9mNkNDrkaF"
+                                                            title="YouTube video player" frameborder="0"
+                                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                            allowfullscreen></iframe>
                                                 </div>
                                           </div>
                                           <div class="col">
                                                 <div class="card h-100">
-                                                      <iframe  width="100%" class="card-img-top" height="100%" src="https://www.youtube.com/embed/VkvpMktctXQ?si=ps3YfZ9mNkNDrkaF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                      <iframe width="100%" class="card-img-top" height="100%"
+                                                            src="https://www.youtube.com/embed/VkvpMktctXQ?si=ps3YfZ9mNkNDrkaF"
+                                                            title="YouTube video player" frameborder="0"
+                                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                            allowfullscreen></iframe>
                                                 </div>
                                           </div>
                                     </div>
                               </div>
                         </div>
 
+                        <div class="row ps-2 mt-4">
+                              <div class="col-12 content-main">
+                                    <div class="row header">
+                                          <h4>តាមចាប់ខ្លួន</h4>
+                                    </div>
+                                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-5 g-3 content-news card-master">
+                                          <a href="#" class="col">
+                                                <div class="card h-100">
+                                                      <img src="assets/arrested/Nguon-Sao.jpg" class="card-img-top" alt="...">
+                                                      <div class="card-body text-center p-0 ">
+                                                            <h5 class="card-title">ងួន សៅ ហៅទីយួន</h5>
+                                                      </div>
+                                                </div>
+                                          </a>
+                                          <div class="col">
+                                                <div class="card h-100">
+                                                      <img src="assets/arrested/Ket-Seiha.jpg" class="card-img-top" alt="...">
+                                                      <div class="card-body text-center p-0 ">
+                                                            <h5 class="card-title">កេត សីហា ហៅអាទឹកកក</h5>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="col">
+                                                <div class="card h-100">
+                                                      <img src="assets/arrested/Nuon-Morako.jpg" class="card-img-top" alt="...">
+                                                      <div class="card-body text-center p-0 ">
+                                                            <h5 class="card-title">ងួន មរកត</h5>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="col">
+                                                <div class="card h-100">
+                                                      <img src="assets/arrested/Mong-Kheng.jpg" class="card-img-top" alt="...">
+                                                      <div class="card-body text-center p-0 ">
+                                                            <h5 class="card-title">ម៉ុង ខេង</h5>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="col">
+                                                <div class="card h-100">
+                                                      <img src="assets/arrested/Nov-Sodan.jpg" class="card-img-top" alt="...">
+                                                      <div class="card-body text-center p-0 ">
+                                                            <h5 class="card-title">នៅ សូដាន ហៅឌី</h5>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="col">
+                                                <div class="card h-100">
+                                                      <img src="assets/arrested/Sun-Seima.jpg" class="card-img-top" alt="...">
+                                                      <div class="card-body text-center p-0 ">
+                                                            <h5 class="card-title">ស៊ុន សីម៉ា</h5>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="col">
+                                                <div class="card h-100">
+                                                      <img src="assets/arrested/Seav-Ty-.jpg" class="card-img-top" alt="...">
+                                                      <div class="card-body text-center p-0 ">
+                                                            <h5 class="card-title">សៀវ ទី</h5>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="col">
+                                                <div class="card h-100">
+                                                      <img src="assets/arrested/Thai-Silin.jpg" class="card-img-top" alt="...">
+                                                      <div class="card-body text-center p-0 ">
+                                                            <h5 class="card-title">ថៃ សុខលីន</h5>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="col">
+                                                <div class="card h-100">
+                                                      <img src="assets/arrested/Chang-Try.jpg" class="card-img-top" alt="...">
+                                                      <div class="card-body text-center p-0 ">
+                                                            <h5 class="card-title">ចាង ទ្រី ហៅចាងទី</h5>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="col">
+                                                <div class="card h-100">
+                                                      <img src="assets/arrested/Bou-Darith.jpg" class="card-img-top" alt="...">
+                                                      <div class="card-body text-center p-0 ">
+                                                            <h5 class="card-title">ប៊ូ ដារិទ្ធ ហៅក្រឹម</h5>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          
+                                    </div>
+                              </div>
+                        </div>
 
                   </div>
             </div>

@@ -68,6 +68,36 @@ window.onscroll = function () {
       }
 };
 
+// var container = document.getElementById('changesize');
+// var container = document.querySelector('container');
+
+function checkWindowWidth() {
+      var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+      var container = document.getElementById('changesize');
+      var removeInMarquee = document.querySelector('.marquee');
+      var removeInSlider = document.querySelector('.slider');
+      var removeInAdsense = document.querySelector('.adsense-blog');
+      var removeInContent = document.querySelector('.content-body');
+
+
+      if (windowWidth < 990) {
+            container.classList.remove('container')
+            removeInMarquee.classList.remove('container')
+            removeInSlider.classList.remove('container')
+            removeInAdsense.classList.remove('container')
+            removeInContent.classList.remove('container')
+      } else {
+            container.classList.add('container')
+            removeInMarquee.classList.add('container')
+            removeInSlider.classList.add('container')
+      }
+}
+
+// Call the function when the window is resized
+window.addEventListener('resize', checkWindowWidth);
+
+// Call the function initially
+checkWindowWidth();
 // Handle the button click event to scroll back to the top
 document.getElementById('backToTopBtn').addEventListener('click', function () {
       window.scrollTo({
@@ -85,7 +115,7 @@ $(document).ready(function () {
 
                   if (scrollPosition > position) {
                         $(this).addClass("show");
-                  } 
+                  }
                   else {
                         $(this).removeClass("show");
                   }
@@ -95,4 +125,3 @@ $(document).ready(function () {
       $(window).scroll(checkVisibility);
       checkVisibility();
 });
-
