@@ -21,6 +21,11 @@
       box-sizing: border-box;
 }
 
+body{
+      overflow-x: hidden;
+      overscroll-behavior-x: none;
+}
+
 /* 
 #canvas{
       position: absolute;
