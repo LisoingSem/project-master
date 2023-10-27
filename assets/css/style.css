@@ -295,7 +295,6 @@ div.row .col-md-3 .content-main {
 }
 
 div.row .col-md-3 .content-main .header h4 {
-      padding: 10px 10px;
       padding: 15px 0px 15px 20px;
       font-weight: bold;
       font-size: 22px;
@@ -488,7 +487,6 @@ div.content-master .content-main .row{
 
 div.content-master .content-main .row.header{
       border-top: 1px solid var(--content-border);
-      padding: 0px 20px;
       margin: 0;
 }
 div.content-master .content-main img {
@@ -546,7 +544,7 @@ div.content-master .content-main .content-news p.description {
 div.content-master .content-main .content-news {
       opacity: 0;
       transform: translateY(100px);
-      transition: opacity 0.3s, transform 2s;
+      transition: opacity 0.3s, transform .5s;
       margin: 0;
 }
 
@@ -564,11 +562,29 @@ div.content-master .content-main .content-news div.read-more {
 }
 
 div.content-master .content-main .row.button-action{
+      height: auto !important;
       border-bottom:1px solid var(--content-border);
       border-left:1px solid var(--content-border);
       border-right:1px solid var(--content-border);
       padding: 10px;
       margin: 0;
+}
+
+div.content-master .content-main .row.button-action button{
+      padding: 10px;
+      border: none;
+      font-family: var(--content-font);
+}
+
+
+div.content-master .content-main .content-news.card-master {
+      overflow: hidden;
+      height: auto !important;
+      padding: 0px 10px 15px 10px;
+}
+
+div.content-master .content-main .content-news.card-master iframe{
+      height: 160px;
 }
       
 
