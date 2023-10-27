@@ -23,15 +23,9 @@
 
 html, body{
       overflow-x: hidden;
-      overscroll-behavior-x: none;
+      /* overscroll-behavior-x: none; */
 }
 
-/* 
-#canvas{
-      position: absolute;
-      z-index: -99;
-      display: block;
-} */
 
 div.container-fluid.header {
       background-color: var(--header-bg);
