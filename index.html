@@ -68,8 +68,9 @@
 
       <section class="container mt-2 p-0 marquee">
             <div class="row m-0 p-0 position-relative ">
-                  <div class="col-12 d-flex justify-content-between align-content-center align-self-center">
-                        <div class="position-absolute hot-news">
+                  <div
+                        class="col-12 d-flex justify-content-between align-content-center align-self-center marquee-style">
+                        <div class="position-absolute hot-news d-sm-none">
                               ព័ត៌មានថ្មីបំផុត
                               <span class="corner"></span>
                         </div>
@@ -93,7 +94,7 @@
                               និងផែនការកិច្ចសហប្រតិបត្តិការទ្វេរភាគីកម្ពុជា-វៀតណាម៕
 
                         </marquee>
-                        <div id="time-clock"></div>
+                        <div id="time-clock" class="clock"></div>
                   </div>
             </div>
       </section>
@@ -132,13 +133,14 @@
             <div class="row m-0 p-0 ">
                   <div class="col-12 p-0 p-md-1">
                         <div class="row adsense ">
-                              <div class="col-2 col-md-3"><a href="#"><img src="assets/images/sortheth.png" alt=""></a></div>
-                              <div class="col-6 p-0 col-md-6">
-                                    <div class="row mb-3">
+                              <div class="col-12 col-md-3 col-sm-3"><a href="#"><img src="assets/images/sortheth.png"
+                                                alt=""></a></div>
+                              <div class="col-12 col-md-6 col-sm-6 mt-1 mt-sm-0 p-0 ">
+                                    <div class="row mb-1 mb-sm-3 ">
                                           <div class="col-12"><a href="#"><img src="assets/images/banner.jpeg"
                                                             alt=""></a></div>
                                     </div>
-                                    <div class="row m-0">
+                                    <div class="row m-0 mt-1 mt-sm-0">
                                           <div class="col-4"><a href="#"><img src="assets/images/police-news.png"
                                                             alt=""></a></div>
                                           <div class="col-4"><a href="#"><img src="assets/images/24h-call.png"
@@ -147,7 +149,7 @@
                                                             alt=""></a></div>
                                     </div>
                               </div>
-                              <div class="col-4 col-md-3" class="w-100"><iframe width="100%" height="100%"
+                              <div class="col-12 col-md-3 col-sm-3 mt-1 mt-sm-0 ads-video" class="w-100"><iframe width="100%" height="100%"
                                           src="https://www.youtube.com/embed/Czzp1Vyx__U?si=hp1w9QJ7ATuxGjwB"
                                           title="YouTube video player" frameborder="0"
                                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -159,8 +161,8 @@
 
       <section class="container mt-3  p-0 content-body">
             <div class="row m-0 ps-md-1 ">
-                  <div class="col-12 col-md-3 m-0 ">
-                        <div class="row">
+                  <div class="col-12 col-md-3 col-sm-3 m-0 ">
+                        <div class="row d-none d-sm-block">
                               <div class="categories-main">
                                     <div class="categories-header">
                                           <h4>មាតិការព័ត៌មាន</h4>
@@ -270,13 +272,14 @@
                                                                   <a href="#">
                                                                         <div class="contact">
                                                                               <i class="fa-brands fa-facebook"></i>
-                                                                              <span class="d-md-none">តាមដានទំព័រ</span>
+                                                                              <span class="text">តាមដានទំព័រ</span>
                                                                         </div>
                                                                   </a>
                                                                   <a href="#">
                                                                         <div class="contact">
                                                                               <i class="fa-solid fa-message"></i>
-                                                                              <span class="d-md-none">សូមទាក់ទងមកយើងខ្ញុំ</span>
+                                                                              <span
+                                                                                    class="text">សូមទាក់ទងមកយើងខ្ញុំ</span>
                                                                         </div>
                                                                   </a>
                                                             </div>
@@ -322,9 +325,9 @@
                               </div>
                         </div>
                   </div>
-                  <div class=" col-md-9 col-12 content-master ">
-                        <div class="row ps-2">
-                              <div class="col-12 content-main pe-0 ">
+                  <div class=" col-md-9 col-12 col-sm-9 content-master ">
+                        <div class="row ps-sm-2 p-0 ">
+                              <div class="col-12 content-main pe-sm-0 p-0">
                                     <div class="row header">
                                           <h4>ព័ត៌មានថ្មីបំផុត</h4>
                                     </div>
@@ -863,7 +866,8 @@
                                     <div class="row header">
                                           <h4>វីដេអូ</h4>
                                     </div>
-                                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-4 g-3 content-news card-master">
+                                    <div
+                                          class="row row-cols-1 row-cols-sm-1 row-cols-sm-2  row-cols-md-2 row-cols-xl-4 g-3 content-news card-master">
                                           <div class="col">
                                                 <div class="card h-100">
                                                       <iframe width="100%" class="card-img-top" height="100%"
@@ -909,10 +913,12 @@
                                     <div class="row header">
                                           <h4>តាមចាប់ខ្លួន</h4>
                                     </div>
-                                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-5 g-3 content-news card-master">
+                                    <div
+                                          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-5 g-3 content-news card-master">
                                           <a href="#" class="col">
                                                 <div class="card h-100">
-                                                      <img src="assets/arrested/Nguon-Sao.jpg" class="card-img-top" alt="...">
+                                                      <img src="assets/arrested/Nguon-Sao.jpg" class="card-img-top"
+                                                            alt="...">
                                                       <div class="card-body text-center p-0 ">
                                                             <h5 class="card-title">ងួន សៅ ហៅទីយួន</h5>
                                                       </div>
@@ -920,7 +926,8 @@
                                           </a>
                                           <div class="col">
                                                 <div class="card h-100">
-                                                      <img src="assets/arrested/Ket-Seiha.jpg" class="card-img-top" alt="...">
+                                                      <img src="assets/arrested/Ket-Seiha.jpg" class="card-img-top"
+                                                            alt="...">
                                                       <div class="card-body text-center p-0 ">
                                                             <h5 class="card-title">កេត សីហា ហៅអាទឹកកក</h5>
                                                       </div>
@@ -928,7 +935,8 @@
                                           </div>
                                           <div class="col">
                                                 <div class="card h-100">
-                                                      <img src="assets/arrested/Nuon-Morako.jpg" class="card-img-top" alt="...">
+                                                      <img src="assets/arrested/Nuon-Morako.jpg" class="card-img-top"
+                                                            alt="...">
                                                       <div class="card-body text-center p-0 ">
                                                             <h5 class="card-title">ងួន មរកត</h5>
                                                       </div>
@@ -936,7 +944,8 @@
                                           </div>
                                           <div class="col">
                                                 <div class="card h-100">
-                                                      <img src="assets/arrested/Mong-Kheng.jpg" class="card-img-top" alt="...">
+                                                      <img src="assets/arrested/Mong-Kheng.jpg" class="card-img-top"
+                                                            alt="...">
                                                       <div class="card-body text-center p-0 ">
                                                             <h5 class="card-title">ម៉ុង ខេង</h5>
                                                       </div>
@@ -944,7 +953,8 @@
                                           </div>
                                           <div class="col">
                                                 <div class="card h-100">
-                                                      <img src="assets/arrested/Nov-Sodan.jpg" class="card-img-top" alt="...">
+                                                      <img src="assets/arrested/Nov-Sodan.jpg" class="card-img-top"
+                                                            alt="...">
                                                       <div class="card-body text-center p-0 ">
                                                             <h5 class="card-title">នៅ សូដាន ហៅឌី</h5>
                                                       </div>
@@ -952,7 +962,8 @@
                                           </div>
                                           <div class="col">
                                                 <div class="card h-100">
-                                                      <img src="assets/arrested/Sun-Seima.jpg" class="card-img-top" alt="...">
+                                                      <img src="assets/arrested/Sun-Seima.jpg" class="card-img-top"
+                                                            alt="...">
                                                       <div class="card-body text-center p-0 ">
                                                             <h5 class="card-title">ស៊ុន សីម៉ា</h5>
                                                       </div>
@@ -960,7 +971,8 @@
                                           </div>
                                           <div class="col">
                                                 <div class="card h-100">
-                                                      <img src="assets/arrested/Seav-Ty-.jpg" class="card-img-top" alt="...">
+                                                      <img src="assets/arrested/Seav-Ty-.jpg" class="card-img-top"
+                                                            alt="...">
                                                       <div class="card-body text-center p-0 ">
                                                             <h5 class="card-title">សៀវ ទី</h5>
                                                       </div>
@@ -968,7 +980,8 @@
                                           </div>
                                           <div class="col">
                                                 <div class="card h-100">
-                                                      <img src="assets/arrested/Thai-Silin.jpg" class="card-img-top" alt="...">
+                                                      <img src="assets/arrested/Thai-Silin.jpg" class="card-img-top"
+                                                            alt="...">
                                                       <div class="card-body text-center p-0 ">
                                                             <h5 class="card-title">ថៃ សុខលីន</h5>
                                                       </div>
@@ -976,7 +989,8 @@
                                           </div>
                                           <div class="col">
                                                 <div class="card h-100">
-                                                      <img src="assets/arrested/Chang-Try.jpg" class="card-img-top" alt="...">
+                                                      <img src="assets/arrested/Chang-Try.jpg" class="card-img-top"
+                                                            alt="...">
                                                       <div class="card-body text-center p-0 ">
                                                             <h5 class="card-title">ចាង ទ្រី ហៅចាងទី</h5>
                                                       </div>
@@ -984,13 +998,14 @@
                                           </div>
                                           <div class="col">
                                                 <div class="card h-100">
-                                                      <img src="assets/arrested/Bou-Darith.jpg" class="card-img-top" alt="...">
+                                                      <img src="assets/arrested/Bou-Darith.jpg" class="card-img-top"
+                                                            alt="...">
                                                       <div class="card-body text-center p-0 ">
                                                             <h5 class="card-title">ប៊ូ ដារិទ្ធ ហៅក្រឹម</h5>
                                                       </div>
                                                 </div>
                                           </div>
-                                          
+
                                     </div>
                               </div>
                         </div>

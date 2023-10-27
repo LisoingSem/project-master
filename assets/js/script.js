@@ -79,14 +79,14 @@ function checkWindowWidth() {
       var removeInAdsense = document.querySelector('.adsense-blog');
       var removeInContent = document.querySelector('.content-body');
 
-
       if (windowWidth < 990) {
             container.classList.remove('container')
             removeInMarquee.classList.remove('container')
             removeInSlider.classList.remove('container')
             removeInAdsense.classList.remove('container')
             removeInContent.classList.remove('container')
-      } else {
+      }
+      else {
             container.classList.add('container')
             removeInMarquee.classList.add('container')
             removeInSlider.classList.add('container')
