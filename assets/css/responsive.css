@@ -3,6 +3,10 @@
             margin: 0;
             padding: 0;
       }
+      
+      body{
+            overflow-x: hidden;
+      }
 
       header .logo img {
             height: 120px;
@@ -219,6 +223,23 @@
 
 
 @media (max-width: 575.98px) {
+      html{
+            padding: 0;
+      }
+      *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+      }
+
+      body{
+            overflow-x: hidden;
+      }
+
+      header {
+            padding: 0 !important;
+            right: 0;
+      }
 
       .hot-news,
       .clock {
