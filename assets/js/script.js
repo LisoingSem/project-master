@@ -134,7 +134,6 @@ var close = document.querySelector('.close-button');
 open.addEventListener('click', function () {
       menu.style.left = '0'
       list.style.right = '0'
-      document.querySelector('body').style.overflowX = 'hidden';
 })
 close.addEventListener('click', function () {
       menu.style.left = '-100%'
@@ -145,17 +144,3 @@ menu.addEventListener('click', function () {
       list.style.right = '100%'
 })
 
-
-$(document).ready(function() {
-      // Add the scroll event listener to the menu body
-      $('.menu-body').scroll(function() {
-        // Check if the scroll position is at the bottom of the menu
-        if ($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight) {
-          // Disable scrolling when reaching the bottom
-          $(this).css('overflow-y', 'hidden');
-        } else {
-          // Enable scrolling when not at the bottom
-          $(this).css('overflow-y', 'auto');
-        }
-      });
-    });
