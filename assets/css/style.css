@@ -966,7 +966,7 @@ footer h3 {
       }
 
       #pop-menu {
-            height: 100%;
+            height: 100vh;
             width: 100%;
             position: fixed;
             z-index: 998;
@@ -975,6 +975,7 @@ footer h3 {
             transition: .5s ease-in;
             background-color: #0000006f;
             overflow-x: hidden;
+            overflow: scroll;
       }
       
       #pop-menu .menu {    
@@ -1020,6 +1021,9 @@ footer h3 {
             padding: 7px 0;
             margin-bottom: 2px;
             border-radius: 3px;
+      }
+      #pop-menu .menu .menu-body ul li:last-child{
+            padding-bottom: 40px;
       }
       
       #pop-menu .menu .menu-body ul li.active{
