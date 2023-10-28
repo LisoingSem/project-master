@@ -1152,6 +1152,7 @@ footer h3 {
       }
       
       .content-main .download {
+            justify-content: space-evenly;
             padding: 10px;
             margin-left: 10px;
             width: 94%;
@@ -1166,14 +1167,12 @@ footer h3 {
       }
       
       .content-main .download a img.app-store {
-            margin-left: 85px;
             width: 120px;
       }
       
       .content-main .download a img.android-store {
             width: 210px;
             margin-top: -74px;
-            margin-left: -20px;
             margin-bottom: -80px;
       }
       
