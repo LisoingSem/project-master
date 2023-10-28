@@ -1099,9 +1099,9 @@ footer h3 {
 
       
       .content-main .social .bg-black {
-            width: 95%;
+            width: 96%;
             margin: 10px;
-            height: 91%;
+            height: 92%;
       }
       
       .content-main .social .social-body img {
@@ -1131,7 +1131,7 @@ footer h3 {
 
       
       .content-main .social .social-body .social-contact {
-            bottom: 40px;
+            bottom: 60px;
             display: flex;
             justify-content: space-evenly;
             width: 100%;
