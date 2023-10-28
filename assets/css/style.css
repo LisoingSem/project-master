@@ -1207,4 +1207,8 @@ footer h3 {
             color: var(--navbar-color);
             font-size: 14px;
       }
+
+      iframe{
+            height: 200px !important;
+      }
 }
