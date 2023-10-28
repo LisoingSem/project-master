@@ -1126,10 +1126,9 @@ footer h3 {
       
       .content-main .social .social-body .social-contact {
             bottom: 40px;
-            left: 15px;
             display: flex;
             justify-content: space-evenly;
-            width: 94%;
+            width: 100%;
             position: absolute;
             z-index: 99;
       }
