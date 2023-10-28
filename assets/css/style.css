@@ -1208,7 +1208,11 @@ footer h3 {
             font-size: 14px;
       }
 
+      div.content-body .list-master{
+            height: auto;
+      }
+
       iframe{
-            height: 500px !important;
+            height: 255px !important;
       }
 }
