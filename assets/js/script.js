@@ -187,7 +187,7 @@ $(document).ready(function () {
       var stickyMobile = $('.search-box');
       var header = $('.header');
       var stickyHeight = header.outerHeight();
-      var stickyOffset = 110;
+      var stickyOffset = 100;
 
       $(window).scroll(function () {
             var scrollTop = $(window).scrollTop();
