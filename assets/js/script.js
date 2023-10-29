@@ -118,6 +118,31 @@ $(document).ready(function () {
                         $(this).removeClass("show");
                   }
             });
+
+
+            $('img').each(function () {
+                  var position = $(this).offset().top;
+                  var scrollPosition = $(window).scrollTop() + $(window).height();
+
+                  if (scrollPosition > position) {
+                        $(this).addClass("show");
+                  }
+                  else {
+                        $(this).removeClass("show");
+                  }
+            });
+
+            $('.content-main').each(function () {
+                  var position = $(this).offset().top;
+                  var scrollPosition = $(window).scrollTop() + $(window).height();
+
+                  if (scrollPosition > position) {
+                        $(this).addClass("show");
+                  }
+                  else {
+                        $(this).removeClass("show");
+                  }
+            });
       }
 
       $(window).scroll(checkVisibility);
