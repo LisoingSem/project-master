@@ -25,8 +25,14 @@ html,
 body {
       overflow-x: hidden;
       overscroll-behavior-x: none;
+      scroll-behavior: smooth;
 }
 
+.button-action button.disabled {
+      background-color: #f8f8f8e5;
+      color: #aaa;
+      cursor: not-allowed;
+}
 
 div.container-fluid.header {
       background-color: var(--header-bg);
@@ -89,11 +95,11 @@ header .social img {
       width: 20px;
 }
 
-#stickyContainer{
+#stickyContainer {
       padding-bottom: 1px !important;
 }
 
-#changesize{
+#changesize {
       margin-top: -1px !important;
 }
 
@@ -618,7 +624,7 @@ div.content-master .content-main .content-news.card-master h5 {
       z-index: 999;
       right: 0;
       transition: .5s ease-in;
-    }
+}
 
 footer {
       background-color: var(--header-bg);
@@ -629,6 +635,7 @@ footer h3 {
       font-size: 15px;
       color: var(--header-color);
 }
+
 
 #backToTopBtn {
       display: none;
@@ -662,6 +669,11 @@ footer h3 {
       .container {
             margin: 0;
       }
+
+      .content-master .content-child{
+            padding-left: 20px !important;
+      }
+      
 
       header .row {
             margin-left: 10px !important;
@@ -963,7 +975,7 @@ footer h3 {
             z-index: 995;
             scroll-behavior: smooth;
             transition: 1s all ease-in-out;
-          }
+      }
 
       header .row {
             margin: 0 !important;
@@ -1115,6 +1127,11 @@ footer h3 {
             color: var(--marquee-blog);
       }
 
+      .content-master .content-child{
+            padding-left: 0 !important;
+      }
+      
+
       div.content-master .content-main .content-news {
             overflow: hidden;
             height: auto !important;
@@ -1247,4 +1264,5 @@ footer h3 {
       iframe {
             height: 255px !important;
       }
+      
 }

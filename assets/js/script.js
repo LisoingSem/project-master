@@ -182,19 +182,80 @@ $(document).ready(function () {
                   stickyContainer.removeClass('sticky');
             }
       });
+      
 });
 
 $(document).ready(function () {
+      var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
       var stickyMobile = $('.search-box');
       var stickyHeight = stickyMobile.offset().top + stickyMobile.outerHeight();
 
       $(window).scroll(function () {
             var scrollTop = $(window).scrollTop();
 
-            if (scrollTop > stickyHeight) {
-                  stickyMobile.addClass('sticky');
-            } else {
-                  stickyMobile.removeClass('sticky');
+            if (windowWidth <= 575) {
+                  if (scrollTop > stickyHeight) {
+                        stickyMobile.addClass('sticky');
+                  } else {
+                        stickyMobile.removeClass('sticky');
+                  }
             }
       });
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+      var height = $('.content-body');
+      var topHeight = height.offset().top;
+      const articleContainer = document.getElementById('master');
+      const articles = Array.from(articleContainer.getElementsByClassName('content-news'));
+      const previousButton = document.getElementById('previousButton');
+      const nextButton = document.getElementById('nextButton');
+      const articlesPerPage = 10;
+      let currentPage = 1;
+
+      function showArticles() {
+            const startIndex = (currentPage - 1) * articlesPerPage;
+            const endIndex = startIndex + articlesPerPage;
+
+            articles.forEach(function (article, index) {
+                  if (index >= startIndex && index < endIndex) {
+                        article.style.display = 'flex';
+                  } else {
+                        article.style.display = 'none';
+                  }
+            });
+
+            if (currentPage < Math.ceil(articles.length / articlesPerPage)) {
+                  nextButton.classList.remove('disabled')
+                  previousButton.classList.add('disabled')
+            } else {
+                  nextButton.classList.add('disabled')
+                  previousButton.classList.remove('disabled')
+            }
+
+      }
+
+      function showPreviousPage() {
+            if (currentPage > 1) {
+                  currentPage--;
+                  showArticles();
+                  window.scrollTo(0, topHeight);
+            }
+      }
+
+      function showNextPage() {
+            const totalPages = Math.ceil(articles.length / articlesPerPage);
+            if (currentPage < totalPages) {
+                  currentPage++;
+                  showArticles();
+                  window.scrollTo(0, topHeight);
+            }
+      }
+
+      previousButton.addEventListener('click', showPreviousPage);
+      nextButton.addEventListener('click', showNextPage);
+
+      // Show the initial page of articles
+      showArticles();
 });
