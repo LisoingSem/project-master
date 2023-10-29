@@ -143,6 +143,7 @@ $(document).ready(function () {
                         $(this).removeClass("show");
                   }
             });
+
       }
 
       $(window).scroll(checkVisibility);
@@ -185,14 +186,12 @@ $(document).ready(function () {
 
 $(document).ready(function () {
       var stickyMobile = $('.search-box');
-      var header = $('.header');
-      var stickyHeight = 100;
-      var stickyOffset = 100;
+      var stickyHeight = stickyMobile.offset().top + stickyMobile.outerHeight();
 
       $(window).scroll(function () {
             var scrollTop = $(window).scrollTop();
 
-            if (scrollTop > stickyOffset) {
+            if (scrollTop > stickyHeight) {
                   stickyMobile.addClass('sticky');
             } else {
                   stickyMobile.removeClass('sticky');
