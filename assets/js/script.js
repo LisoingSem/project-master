@@ -68,8 +68,6 @@ window.onscroll = function () {
       }
 };
 
-// var container = document.getElementById('changesize');
-// var container = document.querySelector('container');
 
 function checkWindowWidth() {
       var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
@@ -144,3 +142,18 @@ menu.addEventListener('click', function () {
       list.style.right = '100%'
 })
 
+$(document).ready(function() {
+      var stickyContainer = $('#stickyContainer');
+      var stickyHeight = stickyContainer.outerHeight();
+      var stickyOffset = stickyContainer.offset().top;
+    
+      $(window).scroll(function() {
+        var scrollTop = $(window).scrollTop();
+    
+        if (scrollTop > stickyOffset) {
+          stickyContainer.addClass('sticky');
+        } else {
+          stickyContainer.removeClass('sticky');
+        }
+      });
+    });
