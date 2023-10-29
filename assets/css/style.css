@@ -960,7 +960,7 @@ footer h3 {
       .search-box.sticky {
             position: fixed;
             top: 0;
-            z-index: 999;
+            z-index: 995;
             scroll-behavior: smooth;
             transition: 1s all ease-in-out;
           }
