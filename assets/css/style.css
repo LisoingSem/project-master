@@ -636,6 +636,11 @@ footer h3 {
       color: var(--header-color);
 }
 
+.content-master .content-child{
+      padding-left: 20px !important;
+}
+
+
 
 #backToTopBtn {
       display: none;
