@@ -1016,7 +1016,7 @@ footer h3 {
             z-index: 998;
             top: 0;
             left: -100%;
-            transition: .5s all ease-in-out;
+            transition: .2s all ease-in-out;
             background-color: #0000006f;
             overflow-x: hidden;
             overflow: scroll;
