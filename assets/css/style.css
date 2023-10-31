@@ -1186,6 +1186,12 @@ footer h3 {
             align-items: center;
       }
       
+      div.row .col-md-3 .content-main .address-footer .box span {
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+      }
+
       div.row .col-md-3 .content-main .address-footer .box b {
             font-size: 14px;
             width: 20%;
