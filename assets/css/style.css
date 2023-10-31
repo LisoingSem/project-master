@@ -1592,12 +1592,13 @@ div.detail-master .card-master h5 {
 
 
       div.detail-master .related-content .card-master img {
-            height: 199px !important;
+            height: 229px !important;
             border-radius: 3px;
       }
 
 
       div.detail-master .card-master h5 {
+            font-size: 15px !important;
             line-height: 20px;
             font-weight: 500;
             overflow: hidden;
