@@ -201,7 +201,6 @@ $(document).ready(function () {
       $(window).scroll(function () {
             var scrollTop = $(window).scrollTop();
 
-            alert(windowWidth);
             if (windowWidth <= 575) {
                   if (scrollTop > stickyHeight) {
                         stickyMobile.addClass('sticky');
