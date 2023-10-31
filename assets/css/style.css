@@ -1597,8 +1597,8 @@ div.detail-master .card-master h5 {
       }
 
 
-      div.detail-master .card-master h5 {
-            font-size: 15px !important;
+      div.detail-master .card-master .card-title {
+            font-size: 20px !important;
             line-height: 20px;
             font-weight: 500;
             overflow: hidden;
