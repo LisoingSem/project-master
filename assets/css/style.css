@@ -1187,14 +1187,14 @@ footer h3 {
       }
       
       div.row .col-md-3 .content-main .address-footer .box span {
-            font-size: 13px;
+            font-size: 14px;
             display: flex;
             align-items: center;
       }
 
       div.row .col-md-3 .content-main .address-footer .box b {
             font-size: 14px;
-            width: 20%;
+            width: 30%;
             margin-bottom: 2px;
       }
       
