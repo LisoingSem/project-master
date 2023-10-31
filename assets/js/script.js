@@ -156,9 +156,10 @@ var list = document.querySelector('.menu');
 var open = document.querySelector('.toggle');
 var close = document.querySelector('.close-button');
 var html = document.querySelector('html');
+var body = document.querySelector('body');
 open.addEventListener('click', function () {
       html.style.overflow = "hidden";
-      body.style.overflowY = "hidden";
+      body.style.overflow = "hidden";
       menu.style.left = '0'
       list.style.right = '0'
 })
