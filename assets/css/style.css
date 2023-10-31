@@ -803,9 +803,10 @@ footer h3 {
       font-weight: 400;
 }
 
-.detail-master .more-actions{
+.detail-master .more-actions {
       padding: 10px;
 }
+
 .detail-master .more-actions .time {
       font-size: 18px;
       display: flex;
@@ -824,26 +825,27 @@ footer h3 {
       cursor: pointer;
 }
 
-.detail-master .content-main{
+.detail-master .content-main {
       height: auto;
 }
 
-.detail-master .content-news{
+.detail-master .content-news {
       height: auto !important;
 }
 
-.detail-master .full-description{
+.detail-master .full-description {
       height: fit-content;
       line-height: 30px;
       font-size: 18px;
 }
 
-#master .content-news  .full-description img{
+#master .content-news .full-description img {
       width: 100%;
       height: 100%;
       margin-bottom: 10px;
 }
-#master .content-news  .full-description a{
+
+#master .content-news .full-description a {
       text-decoration: underline;
       color: #0c247b;
 }
@@ -851,7 +853,6 @@ footer h3 {
 .detail-master .more-actions .fb-share:hover,
 .tg-share:hover {
       color: #fff;
-      ;
 }
 
 .detail-master .more-actions .fb-share a,
@@ -1178,14 +1179,14 @@ footer h3 {
       div.row .col-md-3 .content-main .address-footer {
             border: none;
             margin: 0px 0px 20px 10px;
-      
+
       }
-      
+
       div.row .col-md-3 .content-main .address-footer .box {
             display: flex;
             align-items: center;
       }
-      
+
       div.row .col-md-3 .content-main .address-footer .box span {
             font-size: 14px;
             display: flex;
@@ -1197,7 +1198,7 @@ footer h3 {
             width: 30%;
             margin-bottom: 2px;
       }
-      
+
 
       .master-change {
             display: flex;
@@ -1266,7 +1267,7 @@ footer h3 {
             z-index: 998;
             top: 0;
             left: -100%;
-            transition: .2s all ease-in-out;
+            transition: .1s all ease-in-out;
             background-color: #0000006f;
             overflow-x: hidden;
             overflow: scroll;
@@ -1275,7 +1276,7 @@ footer h3 {
       #pop-menu .menu {
             overflow-y: scroll;
             right: 100%;
-            transition: .5s all ease-in-out;
+            transition: .3s all ease-in-out;
             width: 75%;
             position: relative;
             background-color: #fff;
@@ -1520,4 +1521,22 @@ footer h3 {
             height: 255px !important;
       }
 
+      .detail-master .header {
+            padding: 10px;
+      }
+
+      .detail-master .header h4 {
+            font-size: 18px;
+            padding: 5px;
+            line-height: 30px;
+            font-weight: 500;
+      }
+
+      .detail-master .content-news {
+            height: auto !important;
+      }
+
+      .detail-master .full-description {
+            font-size: 16px;
+      }
 }
