@@ -155,15 +155,19 @@ var menu = document.querySelector('#pop-menu');
 var list = document.querySelector('.menu');
 var open = document.querySelector('.toggle');
 var close = document.querySelector('.close-button');
+var html = document.querySelector('html');
 open.addEventListener('click', function () {
+      html.style.overflow = "hidden";
       menu.style.left = '0'
       list.style.right = '0'
 })
 close.addEventListener('click', function () {
+      html.style.overflow = "scroll";
       menu.style.left = '-100%'
       list.style.right = '100%'
 })
 menu.addEventListener('click', function () {
+      html.style.overflow = "scroll";
       menu.style.left = '-100%'
       list.style.right = '100%'
 })
@@ -262,39 +266,40 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-window.addEventListener("load", function() {
+window.addEventListener("load", function () {
       // Hide all articles within the master class
       var articles = document.querySelectorAll("#master");
-      articles.forEach(function(article) {
+
+      articles.forEach(function (article) {
             article.style.display = "none";
       });
-    
-      setTimeout(function() {
 
-        var loader = document.getElementById("loading");
-        loader.style.display = "none";
+      setTimeout(function () {
 
-        articles.forEach(function(article) {
-          article.style.display = "block";
-        });
+            var loader = document.getElementById("loading");
+            loader.style.display = "none";
+
+            articles.forEach(function (article) {
+                  article.style.display = "block";
+            });
       }, 100);
 });
 
 
-window.addEventListener("load", function() {
+window.addEventListener("load", function () {
       // Hide all articles within the master class
-      var articles = document.querySelectorAll("#details");
-      articles.forEach(function(article) {
-            article.style.display = "none";
+      var descriptions = document.querySelectorAll("#details");
+      descriptions.forEach(function (description) {
+            description.style.display = "none";
       });
-    
-      setTimeout(function() {
 
-        var loader = document.getElementById("loading");
-        loader.style.display = "none";
+      setTimeout(function () {
+            var loader = document.getElementById("loading");
+            loader.style.display = "none";
 
-        articles.forEach(function(article) {
-          article.style.display = "block";
-        });
+            descriptions.forEach(function (description) {
+                  description.style.display = "block";
+            });
+
       }, 100);
 });
