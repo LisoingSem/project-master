@@ -158,16 +158,19 @@ var close = document.querySelector('.close-button');
 var html = document.querySelector('html');
 open.addEventListener('click', function () {
       html.style.overflow = "hidden";
+      body.style.overflowY = "hidden";
       menu.style.left = '0'
       list.style.right = '0'
 })
 close.addEventListener('click', function () {
       html.style.overflow = "scroll";
+      body.style.overflowY = "scroll";
       menu.style.left = '-100%'
       list.style.right = '100%'
 })
 menu.addEventListener('click', function () {
       html.style.overflow = "scroll";
+      body.style.overflowY = "scroll";
       menu.style.left = '-100%'
       list.style.right = '100%'
 })
