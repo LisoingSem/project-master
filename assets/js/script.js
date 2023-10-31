@@ -273,9 +273,14 @@ document.addEventListener('DOMContentLoaded', function () {
 window.addEventListener("load", function () {
       // Hide all articles within the master class
       var articles = document.querySelectorAll("#master");
+      var videos = document.querySelectorAll('#card-master');
 
       articles.forEach(function (article) {
             article.style.display = "none";
+      });
+
+      videos.forEach(function (video) {
+            video.style.display = "none";
       });
 
       setTimeout(function () {
@@ -286,12 +291,16 @@ window.addEventListener("load", function () {
             articles.forEach(function (article) {
                   article.style.display = "block";
             });
+            videos.forEach(function (video) {
+                  video.style.display = "flex";
+            });
+
       }, 100);
 });
 
 
 window.addEventListener("load", function () {
-      // Hide all articles within the master class
+
       var descriptions = document.querySelectorAll("#details");
       descriptions.forEach(function (description) {
             description.style.display = "none";
