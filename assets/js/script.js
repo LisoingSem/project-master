@@ -277,5 +277,24 @@ window.addEventListener("load", function() {
         articles.forEach(function(article) {
           article.style.display = "block";
         });
-      }, 20);
-    });
+      }, 100);
+});
+
+
+window.addEventListener("load", function() {
+      // Hide all articles within the master class
+      var articles = document.querySelectorAll("#details");
+      articles.forEach(function(article) {
+            article.style.display = "none";
+      });
+    
+      setTimeout(function() {
+
+        var loader = document.getElementById("loading");
+        loader.style.display = "none";
+
+        articles.forEach(function(article) {
+          article.style.display = "block";
+        });
+      }, 100);
+});
