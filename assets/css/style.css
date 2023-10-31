@@ -1175,6 +1175,24 @@ footer h3 {
             color: var(--header-bg);
       }
 
+      div.row .col-md-3 .content-main .address-footer {
+            border: none;
+            margin: 0px 0px 20px 10px;
+      
+      }
+      
+      div.row .col-md-3 .content-main .address-footer .box {
+            display: flex;
+            align-items: center;
+      }
+      
+      div.row .col-md-3 .content-main .address-footer .box b {
+            font-size: 14px;
+            width: 20%;
+            margin-bottom: 2px;
+      }
+      
+
       .master-change {
             display: flex;
             flex-flow: row wrap;
